@@ -1,0 +1,211 @@
+body {
+  font-family: 'nunito';
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #f47208;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 5vw; 
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.content {
+  text-align: center;
+  padding: 16px;
+}
+
+
+#myButton {
+  position: fixed;
+  bottom: 70px; 
+  left: 50%;
+  transform: translateX(-50%);
+  animation: mymove 2s infinite;
+  border: none;
+  background: none;
+  z-index: 1001;
+}
+
+
+#logo {
+  width: 150px;
+  height: 150px;
+}
+
+.footer {
+  position: fixed;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f47208;
+  color: white;
+  text-align: center;
+}
+.footer p {
+  font-size: 3vw; 
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@keyframes mymove {
+  0% {
+    bottom: 70px;
+  }
+
+  50% {
+    bottom: 75px;
+  }
+
+  100% {
+    bottom: 70px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.menu-bg,
+#menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+#fullScreenMenu {
+  bottom: 50px;
+  left: 50%;
+  z-index: 1000;
+  color: white;
+  overflow: auto;
+  transform: translate(-50%);
+  max-height: 86%;
+}
+
+.telacheia {
+  display: none;
+  position: fixed;
+  width: 0;
+  height: 0;
+  background: #f47208;
+}
+
+.botãoani {
+  font-size: 16px; 
+  color:#f0f0f0;
+  transition: transform 0.3s;
+  margin: 10% 0; 
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+  margin-left: 15%;
+}
+
+.botãoani:active {
+  transform: scale(1.2);
+}
+
+.botãoani:hover {
+  color: #ffffff; 
+}
+.login-btn {
+  display: inline-block;
+  width: calc(80% - 55px);
+  height: 50px;
+  margin: 20px 2.5px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  transition: background-color 0.3s ease;
+  vertical-align: top;
+}
+
+.login-btn:hover {
+  background-color: #ddd;
+}
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  height: 0;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.back-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 20px 2.5px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  vertical-align: top;
+  margin-left: 45px;
+}
+
+.back-btn:hover {
+  background-color: #ddd;
+}
+
+.back-btn .bar1,
+.back-btn .bar2 {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 60%;
+  background: #333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 20%;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.back-btn .bar1 {
+  top: 23px;
+  transform: rotate(45deg);
+}
+
+.back-btn .bar2 {
+  top: 23px;
+  transform: rotate(-45deg);
+}

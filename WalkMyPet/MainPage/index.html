@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div class="header" id="myHeader">
+    <h2>WalkMyPet</h2>
+  </div>
+  <div class="content">
+    <p>Encontre um DogWalker mais próximo de você!</p>
+    <button id="myButton">
+      <img id="logo" src="./img/Wlakmypet.png" alt="Menu">
+    </button>
+  </div>
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OjfPWQ72yMBy36NulaiKHLR9s6SwDGo&ehbc=2E312F&noprof=1"
+      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div id="map-overlay"></div>
+    <div class="telacheia" id="mapFullScreenMenu">
+      <button class="login-btn">Login</button>
+      <button class="back-btn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+      </button>
+      <h2></h2>
+    </div>
+  </div>
+  <div class="telacheia" id="fullScreenMenu">
+    <button class="login-btn">Login</button>
+    <button class="back-btn">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+    </button>
+
+    <ul>
+      <li><a class="botãoani" href="#">Cadastre o seu Pet!</a></li>
+      <li><a class="botãoani" href="#">Sobre Nós</a></li>
+      <li><a class="botãoani" href="#">Seja um DogWalker</a></li>
+      <li><a class="botãoani" href="#">Jurídico</a></li>
+
+    </ul>
+  </div>
+  <div class="footer">
+    <p> WalkMyPet é uma marca registrada de Marcelo Vinicius </p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
