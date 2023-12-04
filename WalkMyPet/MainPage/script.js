@@ -94,7 +94,7 @@ document.getElementById('map-overlay').addEventListener('click', function() {
         height: ['0%', '100%'],
         borderRadius: ['50%', '0%'],
         easing: 'easeInOutQuad',
-        duration: 1000,
+        duration: 500,
         complete: function() {
           animationInProgress = false;
         }
@@ -106,7 +106,7 @@ document.getElementById('map-overlay').addEventListener('click', function() {
       height: ['100%', '0%'],
       borderRadius: ['0%', '50%'],
       easing: 'easeInOutQuad',
-      duration: 1000,
+      duration: 500,
       complete: function() {
         mapFullScreenMenu.style.display = "none";
         animationInProgress = false;
